@@ -56,12 +56,9 @@ const game = {
     },
 
     detenerJuego: () => {
-        clearInterval(cicloVidaInterval);
-        
-        if (gameOverMsg) {
-            gameOverMsg.classList.remove('hidden');
-        }
-
+        clearInterval(cicloVidaInterval);     
+    
+        gameOverMsg.classList.remove('hidden');
         tamagotchi.avatar = tamagotchi.estados["morir"];
         avatarImg.src = tamagotchi.avatar;
 
