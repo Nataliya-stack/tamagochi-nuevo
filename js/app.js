@@ -72,13 +72,14 @@ const game = {
     },
 
     reiniciarJuego: () => {
-        console.log("¡Кнопка нажата! Работает!");
-    tamagotchi.reiniciarStats();     
-    gameOverMsg.classList.add('hidden');
-    btnReiniciar.classList.add('hidden');
-    panelBotones.classList.remove('hidden');
-    game.render();
-    game.iniciarCiclo(); 
+        tamagotchi.reiniciarStats(); 
+        
+        gameOverMsg.classList.add('hidden');
+        btnReiniciar.classList.add('hidden');
+        panelBotones.classList.remove('hidden');
+        
+        game.render();
+        game.iniciarCiclo(); 
     }
 };
 
